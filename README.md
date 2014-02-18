@@ -1,6 +1,6 @@
 ## Scripts
 
-Some samples scripts that make life easier for developers.
+Some simples scripts that make life easier for developers.
 
 ## License
 

@@ -2,6 +2,7 @@
 
 # sh gsub.sh
 # substract and/or replace for each filename the given string
+# the matched files are copied under /filename_gsub dir
 
 read -p "Enter the string to remove: " rmv_str
 read -p "Enter the string to replace (blank for no replace): " repl_str
@@ -21,4 +22,4 @@ do
 
 done
 
-echo "$matched are renamed!"
+echo "$matched files are renamed!"
