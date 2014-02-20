@@ -43,7 +43,7 @@ HashMd5 () {
 
 HashMd5Sum () {
 	CMD=''
-	[ "$CMD" = '' -a -f "`which md5sum 2>/dev/null`" ]  && CMD=md5
+	[ "$CMD" = '' -a -f "`which md5sum 2>/dev/null`" ]  && CMD=md5sum
 
 	echo "#### MD5sum ####"
 	if [ "$CMD" = "" ]; then
@@ -55,7 +55,7 @@ HashMd5Sum () {
 
 HashSha1 () {
 	CMD=''
-	[ "$CMD" = '' -a -f "`which openssl 2>/dev/null`" ]  && CMD=md5
+	[ "$CMD" = '' -a -f "`which openssl 2>/dev/null`" ]  && CMD=sha1
 
 	echo "#### SHA1 ####"
 	if [ "$CMD" = "" ]; then
@@ -71,7 +71,7 @@ HashSha1 () {
 
 HashSha256 () {
 	CMD=''
-	[ "$CMD" = '' -a -f "`which shasum 2>/dev/null`" ]  && CMD=md5
+	[ "$CMD" = '' -a -f "`which shasum 2>/dev/null`" ]  && CMD=shasum
 
 	echo "#### SHA256 ####"
 	if [ "$CMD" = "" ]; then
@@ -88,7 +88,7 @@ HashSha256 () {
 
 HashSha512 () {
 	CMD=''
-	[ "$CMD" = '' -a -f "`which shasum 2>/dev/null`" ]  && CMD=md5
+	[ "$CMD" = '' -a -f "`which shasum 2>/dev/null`" ]  && CMD=shasum
 
 	echo "#### SHA512 ####"
 	if [ "$CMD" = "" ]; then
